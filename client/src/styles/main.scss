@@ -1,0 +1,19 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/base";
+@import "./base/animations";
+@import "./base/typography";
+
+// components
+
+// layout
+@import "./layout/scrollbar.scss";
+@import "../components/layout/Sidebar/sidebar.scss";
+@import "../components/layout/Navbar/navbar.scss";
+
+// pages
+@import "../pages/Cms/cms.scss";
+// Home

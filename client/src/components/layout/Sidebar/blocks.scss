@@ -1,0 +1,31 @@
+.blocks {
+  width: 100%;
+  .section {
+    .menu {
+      flex: 1 0 100%;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .item {
+      flex: 1 0 40%;
+      padding: 2rem;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: grab;
+      text-align: center;
+      user-select: none;
+      &:last-child {
+        margin-bottom: 3rem;
+      }
+      &:hover {
+        background-color: rgba(white, 0.25);
+      }
+    }
+    .selected {
+      opacity: 0.5;
+    }
+  }
+}

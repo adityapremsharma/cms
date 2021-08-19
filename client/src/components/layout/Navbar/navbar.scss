@@ -1,0 +1,26 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background-color: black;
+  color: white;
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      height: 5rem;
+      width: 10rem;
+      position: relative;
+      p {
+        @include absCenter;
+      }
+
+      &:hover {
+        background-color: rgba(white, 0.25);
+      }
+    }
+  }
+}

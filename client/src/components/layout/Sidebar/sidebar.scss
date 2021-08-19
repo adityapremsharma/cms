@@ -1,0 +1,38 @@
+.sidebar {
+  @import "./blocks.scss";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25rem;
+  background-color: black;
+  color: white;
+  overflow-y: scroll;
+  .tabs {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 5rem;
+    background-color: black;
+    .item {
+      flex: 1;
+      position: relative;
+      cursor: pointer;
+      p {
+        @include absCenter;
+      }
+      &:hover {
+        background-color: rgba(white, 0.25);
+      }
+    }
+    .active {
+      background-color: rgba(white, 0.25);
+    }
+  }
+  .main {
+    padding: 3rem;
+    margin-top: 5rem;
+  }
+}
