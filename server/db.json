@@ -80,27 +80,26 @@
         "type": "select",
         "name": "input3",
         "label": "",
-        "placeholder": "",
         "value": "",
         "disabled": false,
         "required": false,
         "className": "",
         "options": [
           {
-            "name": "",
-            "value": "",
+            "text": "Option 1",
+            "value": "option1",
             "selected": "selected",
             "disabled": false
           },
           {
-            "name": "",
-            "value": "",
+            "text": "Option 2",
+            "value": "option2",
             "selected": "selected",
             "disabled": false
           },
           {
-            "name": "",
-            "value": "",
+            "text": "Option 3",
+            "value": "option3",
             "selected": "selected",
             "disabled": false
           }

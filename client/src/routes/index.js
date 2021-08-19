@@ -22,7 +22,7 @@ const Routes = () => {
       <Navbar pages={pages} />
       <div style={{ paddingTop: "5rem" }}>
         <Switch>
-          <Route exact path="/cms" component={PageRender} />
+          <Route exact path="/" component={Cms} />
           <Route exact path="/cms" component={Cms} />
           <Route exact path="/view" component={View} />
           {pages.map((page) => (
