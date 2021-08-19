@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useContext } from "react";
 import TextInput from "../../components/ui/TextInput";
 import { Context as PageContext } from "../../context/pageContext";
 import { useLocation } from "react-router-dom";
+import PasswordInput from "../../components/ui/PasswordInput";
+import SelectInput from "../../components/ui/SelectInput";
 
 const PageRender = () => {
   const location = useLocation();
@@ -48,7 +50,15 @@ const PageRender = () => {
   return (
     <div>
       {pageData.components.map((data, index) => {
-        return <TextInput key={data.id} data={data} onChange={(e) => onChange(e, data, index)} />;
+        return data.type === "text" ? (
+          <TextInput key={data.id} data={data} onChange={(e) => onChange(e, data, index)} />
+        ) : data.type === "password" ? (
+          <PasswordInput key={data.id} data={data} onChange={(e) => onChange(e, data, index)} />
+        ) : data.type === "select" ? (
+          <SelectInput key={data.id} data={data} onChange={(e) => onChange(e, data, index)} />
+        ) : (
+          <></>
+        );
       })}
     </div>
   );
